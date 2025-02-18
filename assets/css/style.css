@@ -489,18 +489,26 @@ body {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    padding: 20px 20px;
+    padding: 20px;
+    overflow: hidden; /* Prevents horizontal scrolling */
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Content Area */
 .hero .content {
     max-width: 600px;
+    width: 100%;
 }
 
+/* Headings & Text */
 .hero h1 {
     color: var(--secondary1);
     font-size: 2.5rem;
     font-weight: bold;
+    line-height: 1.2;
 }
 
 .hero p {
@@ -509,56 +517,13 @@ body {
     line-height: 1.6;
 }
 
-/* Buttons */
+/* Hero Buttons */
 .hero-buttons {
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
-
-.hero-buttons .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 20px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-}
-
-
-/*******************************************************************************************
-    HERO FOR OTHER PAGES WITH HERO IMAGE
-*********************************************************************************************/
-
-.secondary-hero {
-    padding: 80px 0; /* 80% of the original padding */
-    background: linear-gradient(to right, #3498db, #000080);
-    color: white;
-    min-height: 400px; /* Adjust based on original height */
-    display: flex;
-    align-items: center;
-}
-
-.secondary-hero .content h1 {
-    font-size: 3rem; /* Slightly smaller than the main hero */
-    font-weight: bold;
-    color: var(--secondary1);
-    margin-top: 5rem;
-}
-
-.secondary-hero .content p {
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-
-
-
 
 /* About Us Button */
 .btn-about {
@@ -595,6 +560,7 @@ body {
 /* Hero Image */
 .hero img {
     max-width: 100%;
+    height: auto;
     border-radius: 10px;
     transform: scale(1);
     transition: transform 0.5s ease-in-out;
@@ -609,20 +575,48 @@ body {
     .hero {
         flex-direction: column;
         text-align: center;
+        padding: 50px 20px;
     }
 
     .hero .content {
         max-width: 100%;
+        padding: 0;
     }
 
     .hero-buttons {
         justify-content: center;
+        flex-direction: column;
     }
 
     .hero img {
         margin-top: 30px;
+        max-width: 80%;
     }
 }
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
 
 
 /* HOME CARDS SECTION */
@@ -779,6 +773,34 @@ body {
     .wrapper .card:hover {
         width: 100%;
     }
+}
+
+
+
+
+/*******************************************************************************************
+    HERO FOR OTHER PAGES WITH HERO IMAGE
+*********************************************************************************************/
+
+.secondary-hero {
+    padding: 80px 0; /* 80% of the original padding */
+    background: linear-gradient(to right, #3498db, #000080);
+    color: white;
+    min-height: 400px; /* Adjust based on original height */
+    display: flex;
+    align-items: center;
+}
+
+.secondary-hero .content h1 {
+    font-size: 3rem; /* Slightly smaller than the main hero */
+    font-weight: bold;
+    color: var(--secondary1);
+    margin-top: 5rem;
+}
+
+.secondary-hero .content p {
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 
