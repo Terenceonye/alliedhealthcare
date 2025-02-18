@@ -329,6 +329,7 @@ body {
     display: inline-block;
     transition: 0.3s;
     margin-left: 3rem;
+    text-wrap: nowrap;
   }
 
   #signin:hover {
@@ -345,6 +346,7 @@ body {
     transition: 0.3s;
     border-radius: 50px;
     margin-left: 1rem;
+    text-wrap: nowrap;
   }
 
   #applynow:hover {
@@ -563,6 +565,7 @@ body {
     background: var(--secondary1);
     color: #000;
     box-shadow: 0 4px 10px rgba(241, 196, 15, 0.3);
+    text-wrap: nowrap;
 }
 
 .btn-about:hover {
@@ -575,6 +578,7 @@ body {
     background: var(--white);
     color: var(--primary1);
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    text-wrap: nowrap;
 }
 
 .btn-start:hover {
