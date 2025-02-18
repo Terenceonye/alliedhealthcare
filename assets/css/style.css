@@ -1418,7 +1418,7 @@ ABOUT SECTION MAIN STARTS
 }
 
 
-/* mission section */
+/* Mission Section */
 .mission-section {
     padding: 60px 20px;
     background: #f9f9f9;
@@ -1447,6 +1447,7 @@ ABOUT SECTION MAIN STARTS
     margin-bottom: 20px;
 }
 
+/* Objectives List */
 .mission-section .objectives-list {
     list-style: none;
     padding: 0;
@@ -1455,19 +1456,51 @@ ABOUT SECTION MAIN STARTS
     text-align: left;
 }
 
+/* List Items */
 .mission-section .objectives-list li {
     font-size: 18px;
     color: #444;
     margin-bottom: 12px;
     display: flex;
     align-items: center;
+    gap: 12px; /* Adds spacing between icon and text */
 }
 
+/* Fixes alignment issues for icon */
 .mission-section .objectives-list li i {
     color: var(--secondary2);
-    margin-right: 10px;
     font-size: 20px;
+    flex-shrink: 0; /* Prevents icon from resizing */
 }
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .mission-section {
+        padding: 40px 15px;
+    }
+
+    .mission-section .section-title {
+        font-size: 28px;
+    }
+
+    .mission-section .mission-text {
+        font-size: 16px;
+    }
+
+    .mission-section .objectives-list {
+        max-width: 100%;
+    }
+
+    .mission-section .objectives-list li {
+        font-size: 16px;
+        flex-wrap: wrap; /* Ensures text wraps properly on small screens */
+    }
+
+    .mission-section .objectives-list li i {
+        font-size: 18px;
+    }
+}
+
 
 
 .what-we-provide {
