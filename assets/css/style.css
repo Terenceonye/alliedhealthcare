@@ -1686,58 +1686,6 @@ ABOUT SECTION MAIN STARTS
 }
 
 
-.highlight-box {
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    text-align: left;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.highlight-box p {
-    font-size: 18px;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.highlight-box ul {
-    list-style: none;
-    padding: 0;
-}
-
-.highlight-box li {
-    font-size: 18px;
-    color: #444;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    flex-wrap: wrap; /* Ensures text wraps properly */
-}
-
-.highlight-box li i {
-    color: var(--secondary2);
-    font-size: 20px;
-    flex-shrink: 0;
-}
-
-.highlight-box li strong {
-    display: block; /* Makes bold text appear on a new line on small screens */
-}
-
-@media (max-width: 768px) {
-    .highlight-box li {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .highlight-box li i {
-        font-size: 18px;
-    }
-}
-
 
 
 
