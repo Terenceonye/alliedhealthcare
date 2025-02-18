@@ -120,6 +120,20 @@
         this.nextElementSibling.classList.toggle('dropdown-active')
       }
     }, true)
+
+
+
+      /**
+     * Close the mobile menu when a nav-link is clicked
+     */
+      on('click', '.nav-link', function() {
+        const mobileNav = select('#navbar')
+        if (mobileNav.classList.contains('navbar-mobile')) {
+          mobileNav.classList.remove('navbar-mobile')
+          select('.mobile-nav-toggle').classList.toggle('bi-list')
+          select('.mobile-nav-toggle').classList.toggle('bi-x')
+        }
+      }, true)
   
   
   

@@ -53,7 +53,7 @@
 
       <!-- <h1 class="logo"><a class="fs-4" href="index.html">University Logo</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img src="assets/img/logo-straight.png" alt="" class="img-fluid"></a>
+      <a href="javascript:void(0)" onclick="showPage('homepage')" class="logo"><img src="assets/img/logo-straight.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -61,33 +61,32 @@
 
           <li class="dropdown"><a href="javascript:void(0)"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-                <li><a href="javascript:void(0)" onclick="showPage('about-gahi')">About GAHI</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('letter-from-the-director')">Letter from the Director</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('faculty-staff')">Faculty & Staff</a></li>
+                <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('about-gahi')">About GAHI</a></li>
+              <li><a class="nav-link"  href="javascript:void(0)" onclick="showPage('letter-from-the-director')">Letter from the Director</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('faculty-staff')">Faculty & Staff</a></li>
             </ul>
           </li>
 
           <li class="dropdown"><a href="javascript:void(0)"><span>Admissions</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-                <li><a href="javascript:void(0)" onclick="showPage('admission-section')">About Admissions</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('registration-process')">Registration Process</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('tuition-fees')">Tuition & Fees</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('grad-requirements')">Graduation Requirements</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('student-services')">Student Services</a></li>
+                <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('admission-section')">About Admissions</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('registration-process')">Registration Process</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('tuition-fees')">Tuition & Fees</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('grad-requirements')">Graduation Requirements</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('student-services')">Student Services</a></li>
             </ul>
           </li>
 
           <li class="dropdown"><a href="javascript:void(0)"><span>Programs</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-                <li><a href="javascript:void(0)" >About Our Programs</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('course1')">Patient Care Technician Courses</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('course2')">Ultrasound Technician Courses</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('course3')">Medical Assistant Courses</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('course4')">Phlebotaomy Courses</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('course5')">CPR Courses</a></li>
-              <li><a href="javascript:void(0)" onclick="showPage('course6')">EKG Technician Courses</a></li>
-              <li><a href="javascript:void(0)" >Nurse Assistant Courses</a></li>
-              <li><a href="javascript:void(0)" >Dialysis Technician Courses</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('course1')">Patient Care Technician Courses</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('course2')">Ultrasound Technician Courses</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('course3')">Medical Assistant Courses</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('course4')">Phlebotaomy Courses</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('course5')">CPR Courses</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('course6')">EKG Technician Courses</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('course7')">Nurse Assistant Courses</a></li>
+              <li><a class="nav-link" href="javascript:void(0)" onclick="showPage('course8')">Dialysis Technician Courses</a></li>
               
             </ul>
           </li>
@@ -97,9 +96,9 @@
           <li><a class="nav-link scrollto" href="javascript:voide(0)" onclick="showPage('contact')">Contact</a></li>
 
 
-          <a  href="#" class="scrollto btn"  id="signin"><i class="fa-solid fa-key me-1"></i>Sign In</a>
+          <a class="nav-link"  href="javascript:void(0)" class="scrollto btn"  id="signin" onclick="showPage('login-page')"><i class="fa-solid fa-key me-1"></i>Sign In</a>
         
-            <a href="#"  class="btn" id="applynow">Apply Now <i class="fas fa-paper-plane ms-1"></i></a>
+            <a class="nav-link" href="javascript:void(0)"  class="btn" id="applynow">Apply Now <i class="fas fa-paper-plane ms-1"></i></a>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -114,7 +113,7 @@
     <!-- HOME PAGE -->
     <div id="homepage" class="page" >
         <!-- Hero Section -->
-        <section class="hero hero-offset">
+        <section class="hero hero-offset homepage-offset-mobile">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Text Content -->
@@ -128,8 +127,8 @@
                             
                             <!-- Buttons -->
                             <div class="hero-buttons">
-                                <a href="javascript:void(0)" onclick="showPage('about')" class="btn btn-about" data-aos="zoom-in" data-aos-offset="0"><i class="fas fa-info-circle"></i> About Us</a>
-                                <a href="javascript:void(0)" class="btn btn-start" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="0">
+                                <a href="javascript:void(0)" onclick="showPage('about-gahi')" class="btn btn-about" data-aos="zoom-in" data-aos-offset="0"><i class="fas fa-info-circle"></i> About Us</a>
+                                <a href="javascript:void(0)" onclick="showPage('admission-section')" class="btn btn-start" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="0">
                                     <i class="fas fa-arrow-right"></i> Get Started
                                 </a>
                             </div>
@@ -143,6 +142,14 @@
                 </div>
             </div>
         </section>
+
+        <style>
+            @media (max-width: 1000px){
+                .homepage-offset-mobile {
+                    padding-top: 180px !important;
+                }
+            }
+        </style>
 
        
         <!-- Cards Section -->
@@ -583,8 +590,8 @@
                     <!-- Text Content -->
                     <div class="col-lg-12" data-aos="fade-right">
                         <div class="content">
-                            <h1>Welcome to</h1>
-                            <p>Georgia Allied Health Institute</p>
+                            <h1>Welcome to Georgia Allied Health Institute (GAHI)</h1>
+                            <p>Your Journey to a Healthier Future Starts Here.</p>
                         </div>
                     </div>
         
@@ -1327,10 +1334,10 @@
                 <h2>Program Details</h2>
                 <div class="details-grid">
                     <div class="detail-box"><strong>Total Hours:</strong> 2796</div>
-                    <div class="detail-box"><strong>Duration:</strong> 21 Months</div>
+                    <div class="detail-box"><strong>Course Length:</strong> 84 Weeks</div>
                     <div class="detail-box"><strong>Median Salary:</strong> $62,000</div>
                     <div class="detail-box"><strong>Avg. Hourly Wage:</strong> $29.97</div>
-                    <div class="detail-box"><strong>Course Length:</strong> 84 Weeks</div>
+                    
                 </div>
                 <div style="max-width: 700px; width: 100%; margin: 2rem auto;">
                     <img src="assets/img/usp.png" alt="" width="100%">
@@ -1407,10 +1414,10 @@
                 <h2>Program Details</h2>
                 <div class="details-grid">
                     <div class="detail-box"><strong>Total Hours:</strong> 380</div>
-                    <div class="detail-box"><strong>Duration:</strong> 14 Weeks</div>
+                    <div class="detail-box"><strong>Course Length:</strong> 14 Weeks</div>
                     <div class="detail-box"><strong>Median Salary:</strong> $27,000</div>
                     <div class="detail-box"><strong>Avg. Hourly Wage:</strong> $13</div>
-                    <div class="detail-box"><strong>Course Length:</strong> 14 Weeks</div>
+                    
                 </div>
                 <div style="max-width: 700px; width: 100%; margin: 2rem auto;">
                     <img src="assets/img/MedicalAssistant.png" alt="" width="100%">
@@ -1488,10 +1495,9 @@
                 <h2>Program Details</h2>
                 <div class="details-grid">
                     <div class="detail-box"><strong>Total Hours:</strong> 168</div>
-                    <div class="detail-box"><strong>Duration:</strong> 6 Weeks (including externship)</div>
+                    <div class="detail-box"><strong>Course Length:</strong> 6 Weeks (including externship)</div>
                     <div class="detail-box"><strong>Median Salary:</strong> $29,000</div>
                     <div class="detail-box"><strong>Avg. Hourly Wage:</strong> $14</div>
-                    <div class="detail-box"><strong>Course Length:</strong> 6 Weeks</div>
                 </div>
                 <div style="max-width: 700px; width: 100%; margin: 2rem auto;">
                     <img src="assets/img/plebo.jpg" alt="" width="100%">
@@ -1588,7 +1594,6 @@
     
     </div>
 
-<!-- Electrocardiogram -->
 <!-- Electrocardiogram Technician -->
 <div id="course6" class="page course-details">
 
@@ -1645,10 +1650,10 @@
             <h2>Program Details</h2>
             <div class="details-grid">
                 <div class="detail-box"><strong>Total Hours:</strong> 198</div>
-                <div class="detail-box"><strong>Duration:</strong> 6 Weeks</div>
+                <div class="detail-box"><strong>Course Length:</strong> 6 Weeks</div>
                 <div class="detail-box"><strong>Median Salary:</strong> $37,000</div>
                 <div class="detail-box"><strong>Avg. Hourly Wage:</strong> $18.04</div>
-                <div class="detail-box"><strong>Course Length:</strong> 6 Weeks</div>
+                
             </div>
             <div style="max-width: 700px; width: 100%; margin: 2rem auto;">
                 <img src="assets/img/ekg-2.png" alt="" width="100%">
@@ -1668,10 +1673,158 @@
 
 </div>
 
+<!-- Nurse Assistant Program -->
+<div id="course7" class="page course-details">
 
+    <section class="secondary-hero hero-offset">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-12" data-aos="fade-right">
+                    <div class="content">
+                        <h1>Become a Certified Nurse Assistant</h1>
+                        <p>Prepare for a rewarding career in patient care by acquiring essential skills in monitoring vital signs, assisting with mobility, and ensuring patient well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
+    <section class="course-intro">
+        <div class="container">
+            <div class="row">
+                <!-- Text Content on the Left -->
+                <div class="col-md-6 text-content">
+                    <h2>Nurse Assistant Program</h2>
+                    <p>The Nurse Assistant program is a comprehensive training designed to prepare students for certification and employment in hospitals, nursing homes, and healthcare facilities. Training includes vital sign monitoring, body mechanics, first aid, and patient rights.</p>
+                    <p>Graduates will gain hands-on experience in patient care, assisting with daily activities while ensuring safety and comfort.</p>
+                    <p><strong style="color: var(--secondary2);">Requirement:</strong> Students must complete prerequisite coursework or obtain instructor approval before enrolling.</p>
+                </div>
+                <!-- Image Background on the Right -->
+                <div class="col-md-6 course-image" style="background-image: url('assets/img/na-1.jpg');">
+                    <!-- The image is set as a background in CSS -->
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="program-objectives">
+        <div class="container">
+            <h2>Program Objectives</h2>
+            <ul class="fade-slide">
+                <li><i class="fas fa-check-circle"></i> Perform basic first aid procedures</li>
+                <li><i class="fas fa-check-circle"></i> Administer CPR and AED support</li>
+                <li><i class="fas fa-check-circle"></i> Measure and record vital signs</li>
+                <li><i class="fas fa-check-circle"></i> Apply proper body mechanics for lifting, turning, and patient care</li>
+                <li><i class="fas fa-check-circle"></i> Understand the anatomy and physiology of body systems</li>
+                <li><i class="fas fa-check-circle"></i> Maintain hygiene and infection control practices</li>
+                <li><i class="fas fa-check-circle"></i> Assist patients in daily activities while maintaining dignity and independence</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="program-details">
+        <div class="container">
+            <h2>Program Details</h2>
+            <div class="details-grid">
+                <div class="detail-box"><strong>Total Hours:</strong> 104</div>
+                <div class="detail-box"><strong>Course Length:</strong> 6 Weeks</div>
+                <div class="detail-box"><strong>Median Salary:</strong> $24,000</div>
+                <div class="detail-box"><strong>Avg. Hourly Wage:</strong> $16</div>
+                
+            </div>
+            <div style="max-width: 700px; width: 100%; margin: 2rem auto;">
+                <img src="assets/img/na-2.png" alt="" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Get More Information</h2>
+            <div class="cta-buttons">
+                <!-- <a href="assets/img/course-descriptions/Nurse_Assistant_Course_Description.pdf" target="_blank" class="cta-btn">View Detailed Course Description <i class="fas fa-file-pdf"></i></a> -->
+                <a href="assets/img/pdf/catalog2022.pdf" target="_blank" class="cta-btn">View Student Handbook <i class="fas fa-book"></i></a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Dialysis Technician -->
+<div id="course8" class="page course-details">
+
+    <section class="secondary-hero hero-offset">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-12" data-aos="fade-right">
+                    <div class="content">
+                        <h1>Become a Certified Dialysis Technician</h1>
+                        <p>Gain the skills needed to assist in dialysis treatment, patient care, and essential medical procedures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-intro">
+        <div class="container">
+            <div class="row">
+                <!-- Text Content on the Left -->
+                <div class="col-md-6 text-content">
+                    <h2>Dialysis Technician Program</h2>
+                    <p>The Dialysis Technician program is a comprehensive program designed to prepare students for careers as certified clinical hemodialysis technicians. The program combines theoretical instruction with hands-on training in patient care, venipuncture, and dialysis procedures.</p>
+                    <p>Graduates will gain the necessary skills to monitor dialysis equipment, record vital signs, administer local anesthetics under supervision, and respond to patient emergencies.</p>
+                    <p><strong style="color: var(--secondary2);">Requirement:</strong> Students must complete any prerequisite courses or obtain instructor permission before entry.</p>
+                </div>
+                <!-- Image Background on the Right -->
+                <div class="col-md-6 course-image" style="background-image: url('assets/img/dl-1.jpg');">
+                    <!-- The image is set as a background in CSS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="program-objectives">
+        <div class="container">
+            <h2>Program Objectives</h2>
+            <ul class="fade-slide">
+                <li><i class="fas fa-check-circle"></i> Prime dialysis equipment and monitor performance</li>
+                <li><i class="fas fa-check-circle"></i> Record patient weight and vital signs pre- and post-treatment</li>
+                <li><i class="fas fa-check-circle"></i> Administer local anesthetics and drugs under RN supervision</li>
+                <li><i class="fas fa-check-circle"></i> Monitor patients during dialysis for any complications</li>
+                <li><i class="fas fa-check-circle"></i> Take emergency measures, including CPR or oxygen administration</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="program-details">
+        <div class="container">
+            <h2>Program Details</h2>
+            <div class="details-grid">
+                <div class="detail-box"><strong>Total Hours:</strong> 770</div>
+                <div class="detail-box"><strong>Course Length:</strong> 28 Weeks</div>
+                <div class="detail-box"><strong>Median Salary:</strong> $34,000</div>
+                <div class="detail-box"><strong>Avg. Hourly Wage:</strong> $16</div>
+                
+            </div>
+            <div style="max-width: 700px; width: 100%; margin: 2rem auto;">
+                <img src="assets/img/dl-2.jpg" alt="Dialysis Technician" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Get More Information</h2>
+            <div class="cta-buttons">
+                <a href="assets/img/course-descriptions/Dialysis_Technician_Course_Description.pdf" target="_blank" class="cta-btn">View Detailed Course Description <i class="fas fa-file-pdf"></i></a>
+                <a href="assets/img/pdf/catalog2022.pdf" target="_blank" class="cta-btn">View Student Handbook <i class="fas fa-book"></i></a>
+            </div>
+        </div>
+    </section>
+
+</div>
 
     <div id="calendar">
 
@@ -1787,7 +1940,98 @@
 
 
     </div>
+
+
+
+<div id="login-page" class="login-page">
+    <div class="login-box">
+        <h2>Login</h2>
+        <div class="input-group">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password">
+        </div>
+        <button class="login-btn">Login <i class="fa-solid fa-right-to-bracket ms-1"></i></button>
+    </div>
+</div>
+
+
+<div id="grievance" class="page">
+    <section class="secondary-hero hero-offset">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-12" data-aos="fade-right">
+                    <div class="content">
+                        <h1>Empowering Future Healthcare Professionals</h1>
+                        <p>Start Your Journey with Industry-Leading Training & Certification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="student-grievance">
+        <div class="container">
+            <h2>Student Grievance Procedure</h2>
+            <p>Georgia Allied Health Institute provides a prompt and equitable process for resolving student grievances. The procedure is available to any student who believes that a school decision or action has adversely affected his/her status, rights, or privileges as a student.</p>
+            <p>Students with a grievance must first make a reasonable effort to resolve the issue on an informal basis with faculty or administrative personnel. If the issue is not resolved to the student’s satisfaction, the student may meet with a School Director who shall review the grievance with all parties concerned.</p>
+        </div>
+    </section>
+</div>
+
+
+
+
+<!-- Responsibility of Externs -->
+
+<div id="externs" class="page">
+    <section class="secondary-hero hero-offset">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-12" data-aos="fade-right">
+                    <div class="content">
+                        <h1>Externship and Job Placement Responsibilities</h1>
+                        <p>Guidelines for Externs and Students Seeking Job Placement Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="externs-container">
+        <div class="externs-header">
+            <h1 class="externs-title">Responsibilities of Externs</h1>
+        </div>
+        <div class="externs-content">
+            <ul class="externs-list">
+                <li class="externs-item"><i class="fas fa-check-circle me-2"></i>Students are eligible for an externship after all classes they are attending have been completed. Students with a balance at GAHI will not be able to enroll in an externship.</li>
+                <li class="externs-item"><i class="fas fa-check-circle me-2"></i>If a student has their own externship site, they are to inform the Externship Coordinator. All sites must be approved by the Externship Coordinator.</li>
+                <li class="externs-item"><i class="fas fa-check-circle me-2"></i>Externs are to submit time sheets every week to the Externship Coordinator.</li>
+                <li class="externs-item"><i class="fas fa-check-circle me-2"></i>Externs are to be professional and treat the extern site as a job.</li>
+                <li class="externs-item"><i class="fas fa-check-circle me-2"></i>Externs must maintain regular communication with the externship coordinator by email or phone calls.</li>
+                <li class="externs-item"><i class="fas fa-check-circle me-2"></i>No student may withdraw themselves from an externship site until adequate safeguard measures have been taken by the Externship Coordinator.</li>
+                <li class="externs-item"><i class="fas fa-check-circle me-2"></i>Any student who fails to show up to an externship or is dropped from the externship site due to being unprofessional will be dropped from the program.</li>
+            </ul>
+        </div>
     
+        <div class="externs-header">
+            <h1 class="externs-title">Responsibilities of Students Needing Help with Job Placement</h1>
+        </div>
+        <div class="externs-content">
+            <ul class="externs-list">
+                <li class="externs-item"><i class="fas fa-check-circle me-2"></i>Students are responsible for setting up an appointment with the Job Coordinator to receive counseling on how to build a correct resume.</li>
+                <li class="externs-item"><i class="fas fa-check-circle me-2"></i>The Job Placement Coordinator will provide students with counseling and assistance so that they feel ready to take interviews and secure a job.</li>
+                <li class="externs-item"><i class="fas fa-check-circle me-2"></i>Students who are hired are to report the name of the site to the Job Placement Coordinator.</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+
+
 
 <!-- ******************************************************************************************************************************* -->
     <!-- ******************************************************************************************************************************* -->
@@ -1868,6 +2112,37 @@
             </div>
         </section>
 
+<!-- Contact box -->
+        <section class="address-contact-info">
+            <div class="address-contact-header">
+                <h2>Contact Us</h2>
+                <p>We are here to assist you with any inquiries. Get in touch with us today!</p>
+            </div>
+            <div class="address-contact-details">
+                <!-- Address Item -->
+                <div class="address-contact-item" onclick="openGoogleMaps()">
+                    <i class="fas fa-map-marker-alt address-contact-icon"></i>
+                    <div class="address-contact-text">
+                        <span>11 East Coffee Street, Hazlehurst, GA 31539</span>
+                    </div>
+                </div>
+                <!-- Phone Item -->
+                <div class="address-contact-item" onclick="makePhoneCall()">
+                    <i class="fas fa-phone-alt address-contact-icon"></i>
+                    <div class="address-contact-text">
+                        <span>Phone: 770-370-7686</span>
+                    </div>
+                </div>
+                <!-- Fax Item -->
+                <div class="address-contact-item" onclick="sendFax()">
+                    <i class="fas fa-fax address-contact-icon"></i>
+                    <div class="address-contact-text">
+                        <span>Fax: 770-370-7697</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="continuing-education">
             <div class="container">
                 <h2 class="section-title">Advance Your Career with <span>Continuing Education Seminars</span></h2>
@@ -1911,7 +2186,7 @@
         <div class="row">
             <!-- University Info -->
             <div class="col-md-4 footer-about">
-                <img src="assets/img/white-logo.png" alt="University Logo" class="footer-logo">
+                <img src="assets/img/white-logo.png" onclick="showPage('homepage')" alt="University Logo" class="footer-logo">
                 <p>Empowering students with knowledge and <br> skills for a brighter future.</p>
             </div>
 
@@ -1919,11 +2194,10 @@
             <div class="col-md-2 footer-links" >
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Admissions</a></li>
-                    <li><a href="#">Academics</a></li>
-                    <li><a href="#">Research</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('about-gahi')">About Us</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('admission-section')">Admissions</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('student-services')">Student Services</a></li>
+                    <li><a href="javascript:void(0)" onclick="showPage('tuition-fees')">Tuition and Fees</a></li>
                 </ul>
             </div>
 
@@ -1932,17 +2206,27 @@
                 <h4>Contact Us</h4>
                 <p><i class="fas fa-map-marker-alt"></i> 11 East Coffee Street Hazlehurst, GA</p>
                 <p><i class="fas fa-phone"></i> +1 (770) 370-7686</p>
-                <p><i class="fas fa-envelope"></i> info@university.edu</p>
+                <p><i class="fas fa-envelope"></i> info@alliedhealthinst.com</p>
             </div>
 
-            <!-- Social Media -->
-            <div class="col-md-3 footer-social">
-                <h4>Follow Us</h4>
+            <!-- Links and Social Media -->
+            <div class="col-md-3 footer-links mb-5">
+                <h4>Student Resources</h4>
                 <div class="social-icons">
-                    <a href="https://web.facebook.com/GAAHEALTHINSTITUTE?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://x.com/GeorgiaAlliedH" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/gaahealthinstitute/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@jo.harlan_gahi" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <ul>
+                        <li><a href="javascript:void(0)" onclick="showPage('grievance')">Student Grievance Procedure</a></li>
+                        <li><a href="assets/img/course-descriptions/REFUND-POLICY.pdf" target="_blank">Refund Policy</a></li>
+                        <li><a href="javascript:void(0)" onclick="showPage('externs')">Responsibility of Externs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/GAAHEALTHINSTITUTE?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/GeorgiaAlliedH" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/gaahealthinstitute/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@jo.harlan_gahi" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1951,12 +2235,14 @@
         <div class="row">
             <div class="col-md-6 mx-auto text-center footer-newsletter" >
                 <h4>Subscribe to Our Newsletter</h4>
-                <form>
-                    <input type="email" class="form-control" placeholder="Enter your email">
+                <form id="subscribe">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
             </div>
         </div>
+        <!-- Placeholder for the alert -->
+        <div class="max-width: 300px !important" id="alert-container"></div>
 
         <!-- Copyright -->
         <div class="footer-bottom text-center">
@@ -1968,7 +2254,7 @@
     <!-- JavaScript -->
 <script>
         // Array holding all page IDs
-    const pages = ["homepage", "about-gahi", "letter-from-the-director", "faculty-staff", "admission-section", "registration-process", "tuition-fees", "grad-requirements", "student-services", "course1", "course2", "course3", "course4", "course5", "course6", "calendar", "contact"];
+    const pages = ["homepage", "about-gahi", "letter-from-the-director", "faculty-staff", "admission-section", "registration-process", "tuition-fees", "grad-requirements", "student-services", "course1", "course2", "course3", "course4", "course5", "course6", "course7", "course8", "calendar", "contact", "login-page", "grievance", "externs"];
 
     function showPage(pageId) {
         // Hide all pages
@@ -1983,6 +2269,7 @@
         // Save the selected page in localStorage
         localStorage.setItem("currentPage", pageId);
     }
+
 
     // On page load, check if a page was stored in localStorage
 
@@ -2060,6 +2347,60 @@
 
         // alert(hiddenInput.value)
     }
+</script>
+
+<script>
+    // Function to open Google Maps with the address
+    function openGoogleMaps() {
+        const address = "11 East Coffee Street, Hazlehurst, GA 31539";
+        const googleMapsUrl = `https://www.google.com/maps?q=${encodeURIComponent(address)}`;
+        window.open(googleMapsUrl, "_blank");
+    }
+
+    // Function to initiate a phone call (this works on mobile devices)
+    function makePhoneCall() {
+        const phoneNumber = "770-370-7686";
+        window.location.href = `tel:${phoneNumber}`;
+    }
+
+    // Function to initiate a fax call (this works on systems with fax capabilities)
+    function sendFax() {
+        const faxNumber = "770-370-7697";
+        window.location.href = `fax:${faxNumber}`;
+    }
+
+
+
+
+// Managing form alert and clearing the form
+const subscribeForm = document.getElementById('subscribe');
+const alertContainer = document.getElementById('alert-container');
+
+subscribeForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent the default form submission
+    
+    // Reset the form
+    subscribeForm.reset();
+    
+    // Create and display the alert
+    const alert = document.createElement('div');
+    alert.style.maxWidth = "300px";  // Set max-width to 300px
+    alert.style.margin = "0 auto";   // Center the alert
+    alert.classList.add('alert', 'alert-success', 'alert-dismissible', 'fade', 'show', 'slide-in');
+    alert.setAttribute('role', 'alert');
+    alert.innerHTML = 'subscription Successfull! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
+    
+    // Append the alert to the alert-container
+    alertContainer.appendChild(alert);
+
+    // Remove the alert after 5 seconds
+    setTimeout(() => {
+        alert.remove();
+    }, 5000);
+});
+
+
+
 </script>
 
 

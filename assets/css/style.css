@@ -332,7 +332,7 @@ body {
   }
 
   #signin:hover {
-    color: white;
+    
     transform: scale(1.1);
     transition: all ease-in-out .4s;
   }
@@ -352,6 +352,7 @@ body {
     transition: all ease-in-out .4s;
     background: white !important;
     color: var(--primary1) !important;
+    border: 1px solid var(--primary1);
   }
 
 
@@ -372,7 +373,7 @@ body {
     color: #f6b024;
   }
   
-  @media (max-width: 991px) {
+  @media (max-width: 1100px) {
     .mobile-nav-toggle {
       display: block;
     }
@@ -1056,6 +1057,99 @@ body {
    
 }
 
+.address-contact-info {
+    padding: 50px;
+    background-color: #f3f6f9;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.address-contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.address-contact-header h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideInFromTop 1s ease-out;
+}
+
+.address-contact-header p {
+    font-size: 16px;
+    color: #777;
+}
+
+.address-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address-contact-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.address-contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.address-contact-icon {
+    font-size: 24px;
+    color: #007BFF;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.address-contact-item:hover .address-contact-icon {
+    color: #0056b3;
+}
+
+.address-contact-text {
+    font-size: 18px;
+    color: #333;
+}
+
+.address-contact-text span {
+    font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 
 
@@ -1130,6 +1224,7 @@ body {
 .footer-logo {
     width: 150px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .footer-about p {
@@ -3050,4 +3145,220 @@ COURSES UNDER PROGRAMS
     .course-details .cta-buttons {
         flex-direction: column;
     }
+}
+
+
+
+/*************************************************************************************************
+
+
+
+
+LOGIN PAGE 
+
+
+
+
+******************************************************************************************************/
+
+
+/* Background Styling */
+.login-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #0000a3, #a6b9f7);
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    place-items: center;
+    
+    padding-top: 30vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+/* Glassmorphic Login Box */
+.login-page .login-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%; /* Allows it to be responsive */
+    max-width: 600px !important; /* Ensures it never exceeds 600px */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.login-page h2 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.login-page .input-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.login-page input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.login-page .login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary1);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    animation: slideIn 1s ease-in-out;
+}
+
+.login-page .login-btn:hover {
+    background: var(--secondary2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/************************************************************************************************************
+
+
+Student Grievance 
+
+
+
+****************************************************************************************************************/
+
+
+.student-grievance {
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.student-grievance h2 {
+    font-size: 28px;
+    color: #1a237e;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.student-grievance p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Responsibility and Externs */
+.externs-container {
+    /* background: linear-gradient(to bottom, #c8ccdd, #6f90fa); */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    
+}
+.externs-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.externs-title {
+    font-size: 24px;
+    color: var(--primary1);
+    font-weight: bold;
+}
+.externs-content {
+    /* background: rgba(255, 255, 255, 0.9); */
+    padding: 20px;
+    border-radius: 8px;
+}
+.externs-list {
+    list-style-type: none;
+    padding: 0;
+}
+.externs-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.externs-item i {
+    font-size: 18px; /* Adjust as needed */
+    margin-right: 10px;
+    color: var(--secondary2);
+}
+
+
+
+
+/* FOR THE SUBSCRIBE */
+/* Slide-in animation */
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the alert */
+.alert.slide-in {
+    animation: slideInFromBottom 0.5s ease-out;
 }
