@@ -2252,34 +2252,46 @@
 </footer>
 
     <!-- JavaScript -->
-<script>
+    <script>
         // Array holding all page IDs
-    const pages = ["homepage", "about-gahi", "letter-from-the-director", "faculty-staff", "admission-section", "registration-process", "tuition-fees", "grad-requirements", "student-services", "course1", "course2", "course3", "course4", "course5", "course6", "course7", "course8", "calendar", "contact", "login-page", "grievance", "externs"];
-
-    function showPage(pageId) {
-        // Hide all pages
-        pages.forEach(id => document.getElementById(id).style.display = "none");
-
-        // Show the selected page
-        document.getElementById(pageId).style.display = "block";
-
-        // Scroll to the top smoothly
-        window.scrollTo({ top: 0, behavior: "smooth" });
-
-        // Save the selected page in localStorage
-        localStorage.setItem("currentPage", pageId);
-    }
-
-
-    // On page load, check if a page was stored in localStorage
-
-    showPage("homepage");
-    // document.addEventListener("DOMContentLoaded", () => {
-    // const savedPage = localStorage.getItem("currentPage") || "homepage"; // Default to homepage
-    // showPage(savedPage);
-    // });
-
-</script>
+        const pages = ["homepage", "about-gahi", "letter-from-the-director", "faculty-staff", "admission-section", "registration-process", "tuition-fees", "grad-requirements", "student-services", "course1", "course2", "course3", "course4", "course5", "course6", "course7", "course8", "calendar", "contact", "login-page", "grievance", "externs"];
+    
+        function showPage(pageId, addToHistory = true) {
+            // Hide all pages
+            pages.forEach(id => document.getElementById(id).style.display = "none");
+    
+            // Show the selected page
+            document.getElementById(pageId).style.display = "block";
+    
+            // Scroll to the top smoothly
+            window.scrollTo({ top: 0, behavior: "smooth" });
+    
+            // Save the selected page in localStorage
+            localStorage.setItem("currentPage", pageId);
+    
+            // Update the URL without using #
+            if (addToHistory) {
+                history.pushState({ page: pageId }, "", `/${pageId}`);
+            }
+        }
+    
+        // Handle back/forward navigation
+        window.onpopstate = function(event) {
+            if (event.state && event.state.page) {
+                showPage(event.state.page, false);
+            }
+        };
+    
+        // On page load, check if a page is in history or localStorage
+        window.onload = function () {
+            const path = location.pathname.substring(1); // Get page from URL path
+            const storedPage = localStorage.getItem("currentPage") || "homepage";
+            const initialPage = pages.includes(path) ? path : storedPage; // Validate path
+            showPage(initialPage);
+        };
+    </script>
+    
+    
 
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
