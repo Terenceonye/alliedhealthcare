@@ -225,7 +225,7 @@
                         <h3 class="prog-card-title">Patient Care Technician Courses</h3>
                     </div>
                     <div class="prog-btn-section">
-                        <a href="javascript:void(0)" onclick="showPage('about')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
+                        <a href="javascript:void(0)" onclick="showPage('course1')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -243,7 +243,7 @@
                         <h3 class="prog-card-title">Ultrasound Technician program</h3>
                     </div>
                     <div class="prog-btn-section">
-                        <a href="javascript:void(0)" onclick="showPage('about')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
+                        <a href="javascript:void(0)" onclick="showPage('course2')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -261,7 +261,7 @@
                         <h3 class="prog-card-title">Medical Assisting Courses</h3>
                     </div>
                     <div class="prog-btn-section">
-                        <a href="javascript:void(0)" onclick="showPage('about')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
+                        <a href="javascript:void(0)" onclick="showPage('course3')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -279,7 +279,7 @@
                         <h3 class="prog-card-title">Phlebotomy Technician Program</h3>
                     </div>
                     <div class="prog-btn-section">
-                        <a href="javascript:void(0)" onclick="showPage('about')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
+                        <a href="javascript:void(0)" onclick="showPage('course4')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -297,7 +297,7 @@
                         <h3 class="prog-card-title">Cardiopulmonary Resuscitation Courses</h3>
                     </div>
                     <div class="prog-btn-section">
-                        <a href="javascript:void(0)" onclick="showPage('about')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50" >
+                        <a href="javascript:void(0)" onclick="showPage('course5')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50" >
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -315,7 +315,7 @@
                         <h3 class="prog-card-title">Continuing Education Seminar</h3>
                     </div>
                     <div class="prog-btn-section">
-                        <a href="javascript:void(0)" onclick="showPage('about')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
+                        <a href="javascript:void(0)" onclick="showPage('contact')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -333,7 +333,7 @@
                         <h3 class="prog-card-title">Electrocardiogram Technician Courses</h3>
                     </div>
                     <div class="prog-btn-section">
-                        <a href="javascript:void(0)" onclick="showPage('about')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
+                        <a href="javascript:void(0)" onclick="showPage('course6')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -351,7 +351,7 @@
                         <h3 class="prog-card-title">Nurse Assistant Courses</h3>
                     </div>
                     <div class="prog-btn-section">
-                        <a href="javascript:void(0)" onclick="showPage('about')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
+                        <a href="javascript:void(0)" onclick="showPage('course7')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -369,7 +369,7 @@
                         <h3 class="prog-card-title">Dialysis Technician</h3>
                     </div>
                     <div class="prog-btn-section">
-                        <a href="javascript:void(0)" onclick="showPage('about')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
+                        <a href="javascript:void(0)" onclick="showPage('course8')" class="btn-read-more" data-aos="fade-up" data-aos-delay="600" data-aos-offset="-50">
                             Read More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -2310,31 +2310,29 @@
 
 
 <script>
-   $(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-        loop: true, // Ensures infinite scrolling
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-       
-        
-        responsive: {
-            0: { items: 1 },
-            576: { items: 2 },
-            992: { items: 3 },
-            1200: { items: 4 }
-        },
-        onInitialized: customizeDots,
-        onTranslated: customizeDots
-    });
+   $(".owl-carousel").owlCarousel({
+    loop: true, // Ensures infinite scrolling
+    rewind: false, // Try changing this to true if loop still fails
+    margin: 10,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
 
-    function customizeDots() {
-        $(".owl-dot").html('<i class="fas fa-circle"></i>'); // Custom FA dots
-    }
+    responsive: {
+        0: { items: 1 },
+        576: { items: 2 },
+        992: { items: 3 },
+        1200: { items: 4 }
+    },
+    onInitialized: customizeDots,
+    onTranslated: customizeDots
 });
+
+function customizeDots() {
+    $(".owl-dot").html('<i class="fas fa-circle"></i>'); // Custom FA dots
+}
 
 
 </script>
