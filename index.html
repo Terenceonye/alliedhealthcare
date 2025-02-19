@@ -397,7 +397,7 @@
                     <div class="col-lg-5 ms-auto" data-aos="fade-left">
                         <div class="contact-form">
                             <h3 class="form-title">Contact Us</h3>
-                            <form>
+                            <form id="contact-form-home">
                                 <div class="mb-3">
                                     <input type="text" class="form-control" placeholder="Your Name" required>
                                 </div>
@@ -2388,6 +2388,7 @@
 // Managing form alert and clearing the form
 const subscribeForm = document.getElementById('subscribe');
 const alertContainer = document.getElementById('alert-container');
+const contactForm = document.getElementById('contact-form-home')
 
 subscribeForm.addEventListener('submit', (e) => {
     e.preventDefault(); // Prevent the default form submission
@@ -2395,22 +2396,42 @@ subscribeForm.addEventListener('submit', (e) => {
     // Reset the form
     subscribeForm.reset();
     
-    // Create and display the alert
-    const alert = document.createElement('div');
+    // Call the showAlert function
+    showAlert("Subscription Successful!", "success");
+});
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent the default form submission
+    
+    // Reset the form
+    contactForm.reset();
+    
+    // Call the showAlert function
+    showAlert("Message Sent Successful!", "success");
+});
+
+function showAlert(message, type = "success") {
+    // Create the alert element
+    const alert = document.createElement("div");
     alert.style.maxWidth = "300px";  // Set max-width to 300px
     alert.style.margin = "0 auto";   // Center the alert
-    alert.classList.add('alert', 'alert-success', 'alert-dismissible', 'fade', 'show', 'slide-in');
-    alert.setAttribute('role', 'alert');
-    alert.innerHTML = 'subscription Successfull! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
+    alert.classList.add("alert", `alert-${type}`, "alert-dismissible", "fade", "show");
+    alert.setAttribute("role", "alert");
     
-    // Append the alert to the alert-container
+    // Set the alert message
+    alert.innerHTML = `${message} <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
+    
+    // Append the alert to the alert container
     alertContainer.appendChild(alert);
 
     // Remove the alert after 5 seconds
     setTimeout(() => {
         alert.remove();
     }, 5000);
-});
+}
+
+
+
 
 
 

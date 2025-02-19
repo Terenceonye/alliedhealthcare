@@ -3431,7 +3431,16 @@ Student Grievance
     }
 }
 
-/* Apply the animation to the alert */
+/* Alert positioning */
+#alert-container {
+    position: fixed;
+    bottom: 50px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050; /* Ensure it's above other content */
+}
+
+/* Apply animation */
 .alert.slide-in {
     animation: slideInFromBottom 0.5s ease-out;
 }
