@@ -53,11 +53,11 @@
 
       <!-- <h1 class="logo"><a class="fs-4" href="index.html">University Logo</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="javascript:void(0)" onclick="showPage('homepage')" class="logo"><img src="assets/img/logo-straight.png" alt="" class="img-fluid"></a>
+      <a href="javascript:void(0)" onclick="showPage('home')" class="logo"><img src="assets/img/logo-straight.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="javascript:void(0)" onclick="showPage('homepage')">Home</a></li>
+          <li><a class="nav-link scrollto active" href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
 
           <li class="dropdown"><a href="javascript:void(0)"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -111,7 +111,7 @@
     
 
     <!-- HOME PAGE -->
-    <div id="homepage" class="page" style="min-width: 100%;" >
+    <div id="home" class="page" style="min-width: 100%;" >
         <!-- Hero Section -->
         <section class="hero hero-offset homepage-offset-mobile">
             <div class="container">
@@ -2186,7 +2186,7 @@
         <div class="row">
             <!-- University Info -->
             <div class="col-md-4 footer-about">
-                <img src="assets/img/white-logo.png" onclick="showPage('homepage')" alt="University Logo" class="footer-logo">
+                <img src="assets/img/white-logo.png" onclick="showPage('home')" alt="University Logo" class="footer-logo">
                 <p>Empowering students with knowledge and <br> skills for a brighter future.</p>
             </div>
 
@@ -2254,7 +2254,7 @@
     <!-- JavaScript -->
     <script>
         // Array holding all page IDs
-        const pages = ["homepage", "about-gahi", "letter-from-the-director", "faculty-staff", "admission-section", "registration-process", "tuition-fees", "grad-requirements", "student-services", "course1", "course2", "course3", "course4", "course5", "course6", "course7", "course8", "calendar", "contact", "login-page", "grievance", "externs"];
+        const pages = ["home", "about-gahi", "letter-from-the-director", "faculty-staff", "admission-section", "registration-process", "tuition-fees", "grad-requirements", "student-services", "course1", "course2", "course3", "course4", "course5", "course6", "course7", "course8", "calendar", "contact", "login-page", "grievance", "externs"];
     
         function showPage(pageId, addToHistory = true) {
             // Hide all pages
@@ -2285,7 +2285,7 @@
         // On page load, check if a page is in history or localStorage
         window.onload = function () {
             const path = location.pathname.substring(1); // Get page from URL path
-            const storedPage = localStorage.getItem("currentPage") || "homepage";
+            const storedPage = localStorage.getItem("currentPage") || "home";
             const initialPage = pages.includes(path) ? path : storedPage; // Validate path
             showPage(initialPage);
         };
