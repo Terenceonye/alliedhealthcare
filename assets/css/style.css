@@ -44,6 +44,11 @@ body {
     margin: 0 auto;
 }
 
+/* Hide all sections by default */
+section {
+    display: none;
+}
+
 /* --------------------- ANIMATIONS --------------------- */
 @keyframes fadeIn {
     from {
