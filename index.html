@@ -2267,7 +2267,7 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
     
             // Save the selected page in localStorage
-            localStorage.setItem("currentPage", pageId);
+            // localStorage.setItem("currentPage", pageId);
     
             // Update the URL without using #
             if (addToHistory) {
@@ -2285,8 +2285,8 @@
         // On page load, check if a page is in history or localStorage
         window.onload = function () {
             const path = location.pathname.substring(1); // Get page from URL path
-            const storedPage = localStorage.getItem("currentPage") || "home";
-            const initialPage = pages.includes(path) ? path : storedPage; // Validate path
+            // const storedPage = localStorage.getItem("currentPage") || "home";
+            const initialPage = pages.includes(path) ? path : "home"; // Validate path
             showPage(initialPage);
         };
     </script>
