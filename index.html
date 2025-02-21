@@ -34,6 +34,13 @@
 </head>
 <body >
 
+    <!-- css loader -->
+    <div id="global-loader">
+        <div class="whirly-loader"> </div>
+    </div>
+
+
+
    <!-- ======= Top Bar ======= -->
    <div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
@@ -1826,7 +1833,7 @@
 
 </div>
 
-    <div id="calendar">
+    <div id="calendar" class="page">
 
         <section class="secondary-hero hero-offset">
             <div class="container">
@@ -1943,7 +1950,7 @@
 
 
 
-<div id="login-page" class="login-page">
+<div id="login-page" class="page login-page">
     <div class="login-box">
         <h2>Login</h2>
         <div class="input-group">
@@ -2438,7 +2445,11 @@ function showAlert(message, type = "success") {
 
 
 
-
+<script>
+    window.addEventListener("load", function () {
+        document.getElementById("global-loader").style.display = "none";
+    });
+</script>
 
 </body>
 </html>
