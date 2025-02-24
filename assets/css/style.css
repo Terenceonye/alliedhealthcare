@@ -653,12 +653,12 @@ body {
     background-position: center;
     cursor: pointer;
     overflow: hidden;
-    border-radius: 2rem;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: flex 0.5s ease-in-out, transform 0.3s ease-in-out;
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.8);
     position: relative;
     padding: 20px;
     box-sizing: border-box; /* Prevents extra width issues */
